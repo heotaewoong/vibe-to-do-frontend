@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Now Playing — Vibecoding Movies</title>
+    <meta name="description" content="현재 상영 중 영화를 보기 좋은 그리드로 보여줍니다." />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://image.tmdb.org" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="brand">Vibe<span>Movies</span></div>
+      <nav class="nav">
+        <a class="active" href="#">Now Playing</a>
+        <a href="#popular" aria-disabled="true">Popular</a>
+        <a href="#upcoming" aria-disabled="true">Upcoming</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>현재 상영작</h1>
+      <div id="grid" class="grid" aria-live="polite"></div>
+      <div id="status" class="status"></div>
+    </main>
+
+    <footer class="foot">Data provided by TMDB</footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
